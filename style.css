@@ -1,0 +1,142 @@
+:root {
+  background: #939597;
+}
+::selection {
+  background: #4d63f5;
+}
+.bg {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.fcontainer {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.gcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15vw;
+  min-height: 80vh;
+  padding: 30px 0 30px 0;
+}
+.gchild {
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  text-align: left;
+}
+.childS {
+  align-self: flex-start;
+}
+.childE {
+  align-self: flex-end;
+}
+.skill {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(70, 70, 70);
+}
+/*text*/
+.font {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+}
+.title {
+  position: absolute;
+  font-size: 5rem;
+  color: rgb(70, 70, 70);
+  text-align: center;
+}
+.text {
+  text-align: justify;
+  font-size: 2rem;
+  color: white;
+}
+.firstcharacter {
+  float: left;
+  font-size: 6rem;
+  color: #f5df4d;
+}
+.spacing-large {
+  letter-spacing: 0.835em;
+  padding-left: 0.835em;
+}
+.fab {
+  font-size: 3rem;
+  color: rgb(70, 70, 70);
+  padding: 2px;
+}
+.ico {
+  margin: 0px 20px 0px 20px;
+  align-content: center;
+}
+
+.square {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  height: 100%;
+  width: 5vw;
+  background-color: #f5df4d;
+  justify-content: center;
+}
+/*animation*/
+.sides-4 {
+  background: linear-gradient(-90deg, currentColor 50%, #0000 0) 0 0,
+    linear-gradient(currentColor 0 0) 0 0,
+    linear-gradient(90deg, currentColor 50%, #0000 0) 100% 100%,
+    linear-gradient(currentColor 0 0) 100% 100%;
+  background-size: 200% 3px, 3px 0%;
+  background-repeat: no-repeat;
+  transition: 0.3s, background-size 0.3s 0.3s;
+}
+.sides-4:hover {
+  background-position: 100% 0, 0 0, 0 100%, 100% 100%;
+  background-size: 200% 3px, 3px 100%;
+  transition: 0.3s, background-position 0.3s 0.3s;
+}
+
+.allsides-8 {
+  background: linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 100% 0,
+    linear-gradient(currentColor 0 0) 100% 0;
+  background-size: 20px 3px, 3px 20px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.allsides-8:hover {
+  background-position: 100% 100%, 0 0, 0 0, 100% 100%;
+}
